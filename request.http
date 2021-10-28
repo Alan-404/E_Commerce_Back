@@ -1,0 +1,165 @@
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "fullName": "tri",
+    "gender": "nam",
+    "age": "20",
+    "phone": "0938671192",
+    "address": "34A",
+    "email": "ad@gmail.com",
+    "password": "123121"
+}
+
+###
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "address": "sdfasf",
+    "bDate": "04/04/2001",
+    "email": "admin@gmail.com",
+    "fName": "Nguyen",
+    "gender": "Nam",
+    "lName": "alan",
+    "password": "123",
+    "phone": "09230293"
+}
+
+###
+POST http://localhost:5000/account/login
+Content-Type: application/json
+
+{
+    "email": "ad@gmail.com",
+    "password": "123"
+}
+
+###
+PUT http://localhost:5000/user/infor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2MTQ2ZTlkNWI3ZmNhYzRjYWRhYjY3ZmMiLCJpYXQiOjE2MzIwMzkxMTl9.h65_3l8MSVHra3i3AFKx5YL-wBlM3ehReG7Z4tLwv1c
+
+{
+    "fullName": "triz",
+    "gender": "nam",
+    "age": "20",
+    "phone": "0938671192",
+    "address": "34A"
+}
+
+
+###
+PUT http://localhost:5000/account/password
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2MTQ3ZDNiZTY1NmZhMmExZWY1OWI5ZjgiLCJpYXQiOjE2MzIxMDY5MDJ9.G03oxy6r-1asdmiv_g3OoWDtpYOCuX1mDMlYbBUR04s
+
+{
+    "password": "123"
+}
+
+###
+GET http://localhost:5000/account
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2MTQ3ZDNiZTY1NmZhMmExZWY1OWI5ZjgiLCJpYXQiOjE2MzIxMDg2Njh9.l_zxJgsZJ9Q63NJaZoBSqZww3mRxXIhNv90hCkXsG_g
+
+
+
+###
+POST http://localhost:5000/banner/add
+Content-Type: application/json
+
+{
+    "image": "https://minhduongads.com/wp-content/uploads/2019/03/truyen-thong-minh-duong.jpg"
+}
+
+###
+GET http://localhost:5000/banner
+Content-Type: application/json
+
+
+
+###
+POST http://localhost:5000/product/insert
+Content-Type: application/json
+
+{
+    "name":"Test Server",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Book.svg/1200px-Book.svg.png",
+    "description": "ABC"
+}
+
+
+###
+POST http://localhost:5000/product/insert
+Content-Type: application/json
+
+{
+    "name":"ABC",
+    "image":"https://eng4viet.com/wp-content/uploads/2020/11/07/6752/faverate-bok.png",
+    "description": "ABC"
+}
+
+
+###
+POST http://localhost:5000/product/insert
+Content-Type: application/json
+
+{
+    "name":"Vuvu",
+    "image":"https://eng4viet.com/wp-content/uploads/2020/11/07/6752/faverate-bok.png",
+    "description": "yeye"
+}
+
+###
+DELETE http://localhost:5000/product/delete
+Content-Type: application/json
+
+{
+    "name":"ABC"
+}
+
+
+###
+GET http://localhost:5000/product/get
+Content-Type: application/json
+
+###
+POST http://localhost:5000/product/insert
+Content-Type: application/json
+
+{
+    "name":"Rau Củ",
+    "image": ["https://organicfood.vn/image/cache/catalog/Anhblog/rau-cu-qua-tuoi-1-600x315.jpg"],
+    "price": "30000",
+    "quantity": "30",
+    "categoryId": "614c6724fcdf3f2ac2fcfe3e"
+}
+
+
+###
+POST http://localhost:5000/advertisement/insert
+Content-Type: application/json
+
+{
+    "image": "https://hpconnect.vn/wp-content/uploads/2019/09/quy-trinh-thiet-ke-banner-dep.jpg"
+}
+
+
+###
+POST http://localhost:5000/category/insert
+Content-Type: application/json
+
+{
+    "name": "Mỹ Phẩm",
+    "description": "Sell shoes",
+    "thumbnail": "https://inhat.vn/hcm/wp-content/uploads/2019/08/g%C3%B3c-c%E1%BB%A7a-r%C6%B0.jpg"
+}
+
+###
+GET http://localhost:5000/product/book
+
+
+###
+GET http://localhost:5000/category
+
