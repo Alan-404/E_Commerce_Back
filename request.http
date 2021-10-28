@@ -2,7 +2,9 @@ POST http://localhost:5000/user/register
 Content-Type: application/json
 
 {
-    "fullName": "tri",
+    "firstName": "nguyen",
+    "middleName":"duc",
+    "lastName": "tri",
     "gender": "nam",
     "age": "20",
     "phone": "0938671192",
@@ -16,12 +18,13 @@ POST http://localhost:5000/user/register
 Content-Type: application/json
 
 {
+    "firstName": "nguyen",
+    "middleName":"duc",
+    "lastName": "triz",
     "address": "sdfasf",
     "bDate": "04/04/2001",
     "email": "admin@gmail.com",
-    "fName": "Nguyen",
     "gender": "Nam",
-    "lName": "alan",
     "password": "123",
     "phone": "09230293"
 }
@@ -32,7 +35,7 @@ Content-Type: application/json
 
 {
     "email": "ad@gmail.com",
-    "password": "123"
+    "password": "123121"
 }
 
 ###

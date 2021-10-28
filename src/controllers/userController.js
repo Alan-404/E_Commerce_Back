@@ -9,9 +9,9 @@ class userController {
     //
     insertUser = async (req, res) => {
 
-        const {fName, lName ,gender, bDate, phone, address, email, password} = req.body;
+        const {firstName,middleName, lastName ,gender, bDate, phone, address, email, password} = req.body;
         
-        if (!fName || !lName)
+        if (!firstName || ! lastName)
             return res.status(400).json({success: false, message: 'Missing your name'});
         
         try 
@@ -21,7 +21,7 @@ class userController {
             if (existedMail)
                 return res.status(400).json({success: false, message: 'Email has been token'});
             
-            const user = new userModel({fName, lName, gender, bDate, phone, address});
+            const user = new userModel({firstName,middleName, lastName, gender, bDate, phone, address});
 
             await user.save();
 
