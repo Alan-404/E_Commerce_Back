@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = 587;
 require('dotenv').config();
 const cors = require('cors');
 const DB = require('./database')
