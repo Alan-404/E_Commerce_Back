@@ -35,7 +35,6 @@ class accountController {
 
     async loginAccount(req, res)    
     {
-        console.log(req.body);
         const {email, password} = req.body;
         if (!email || !password)
             return res.json({success: false, message: 'Missing email or/and password'});

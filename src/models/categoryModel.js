@@ -13,10 +13,6 @@ const categorySchema = new Schema({
     thumbnail: {
         type: String,
         required: true
-    },
-    slug :{
-        type: String,
-        required: true
     }
 })
 

@@ -73,7 +73,7 @@ POST http://localhost:5000/banner/add
 Content-Type: application/json
 
 {
-    "image": "https://minhduongads.com/wp-content/uploads/2019/03/truyen-thong-minh-duong.jpg"
+    "image": "https://sachsuthattphcm.com.vn/wp-content/uploads/2019/07/Banner-sach-moi-xuat-ban-thang-7.bmp"
 }
 
 ###
@@ -154,9 +154,9 @@ POST http://localhost:5000/category/insert
 Content-Type: application/json
 
 {
-    "name": "Mỹ Phẩm",
-    "description": "Sell shoes",
-    "thumbnail": "https://inhat.vn/hcm/wp-content/uploads/2019/08/g%C3%B3c-c%E1%BB%A7a-r%C6%B0.jpg"
+    "name": "Mỹ Phẩm",
+    "description": "Sell books",
+    "thumbnail": "https://dailyvita.vn/upload/category/2019/09/lam-dep-06092019135407.jpg"
 }
 
 ###

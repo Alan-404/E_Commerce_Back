@@ -41,7 +41,7 @@ class categoryController{
         }
         catch(err)
         {
-
+            return res.json({success: false, message: error.message})
         }
     }
 
